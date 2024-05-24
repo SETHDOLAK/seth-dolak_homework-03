@@ -154,11 +154,11 @@ ggplot(data = drought_exp_clean, # data frame
 
 What is the null model?  
 
-0. **total mass is not predicted by any of the three predictors**  
+0. **total mass as a function of none of the predictors**  
 
 What is the saturated model?  
 
-1. **total mass predicted by SLA, water treatment, and species**  
+1. **total mass predicted by specific leaf area (SLA), water treatment, and species**  
 
 In class we are going to try two more models:  
 
@@ -225,9 +225,11 @@ model.sel(model0,
           model3)
 ```
 
-Out of the four models we have tried, the best model is the one that includes **all three predictors (specific leaf area, water treatment, and species)**  
+Out of the four models we have tried, the best model is the one that includes **all three predictors (specific leaf area, water treatment, and species) (saturated model)**  and delta is zero! Model 1. 
 
 Note that this may change once you fit and compare the other model!  
+
+DOUBLE CHECK THE DIAGNOSTICS FOR THE BEST MODEL!!!!!!!!!!
 
 **look at the diagnostics again!!!!**
 
@@ -248,8 +250,8 @@ What are the reference levels?
 Interpret the model estimates for the:  
 
 - intercept: **mass of Acmispon glaber in drought stressed treatment when SLA = 0**  
-- SLA slope: **across drought treatments and species, with each 1 unit increase in SLA (mm^2^/dry mass of leaf), we expect an increase in total mass of -0.00025 WHICH MEANS WITH THE ESTIMATE AND STANDARD ERROR THERE IS NO EFFECT OF SLA ON TOTAL MASS**  
-- well watered estimate: **across species and SLA, well watered plants tend to be 0.12 +- (figure out how to write plus minus in text) 0.02 g heavier than drought stressed plants**    
+- SLA slope: **across drought treatments and species, with each 1 unit increase in SLA (mm^2^/dry mass of leaf), we expect an decrease in total mass of 0.00025 +- 0.0005 (figure out how to display plus minus in doc) WHICH MEANS WITH THE ESTIMATE AND STANDARD ERROR THERE IS NO EFFECT OF SLA ON TOTAL MASS**  
+- well watered estimate: **On average, across species and SLA, well watered plants tend to be 0.12 +- (figure out how to write plus minus in text) 0.02 g heavier/more massive than drought stressed plants**    
 - Lotus scoparius estimate: **insert response here**    
 - Stipa pulchra estimate: **insert response here**    
 
