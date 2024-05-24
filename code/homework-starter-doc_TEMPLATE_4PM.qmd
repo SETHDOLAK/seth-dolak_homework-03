@@ -125,7 +125,7 @@ ggplot(data = drought_exp_clean, # data frame
               height = 0) # not jittering points up and down
 ```
 
-**plants with larger biomass seem to have larger ranges, Grindelia has highest biomass, Acmispon has lowest biomass**
+**plants with larger biomass seem to have larger ranges, Grindelia (gumweed), california poppy, purple needlegrass seem to have highest biomass, Acmispon, purple sage, and scarlet bugler seem to have the lowest biomass**
 
 ### how does total biomass differ between water treatments?
 
@@ -148,7 +148,7 @@ ggplot(data = drought_exp_clean, # data frame
   geom_point() # scatterplot
 ```
 
-**SLA doesn't really affect total mass? check correlation, compare evidence (visual and statistical)**
+**Slight positive correlation, correlation coefficient of .453. Moderate or strong depending on how you round correlation.**
 
 # Model construction
 
